@@ -1,0 +1,21 @@
+material Driveway/Concrete
+{
+  receive_shadows on
+
+  technique
+  {
+    pass
+    {
+      ambient 1. 1. 1. 1.000000
+      diffuse 1. 1. 1. 1.0
+
+      texture_unit
+      {
+        scale 1 1
+        texture cement-concrete.jpg
+        filtering anisotropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

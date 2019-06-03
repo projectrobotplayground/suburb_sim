@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="driveway">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision_1">
+        <pose>0 0 0.02 0.02 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 6 .3</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+            <torsional>
+              <ode/>
+            </torsional>
+          </friction>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+        </surface>
+        <max_contacts>10</max_contacts>
+      </collision>
+      <collision name="collision_2">
+        <pose>0 -4 0 0.04 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 2 .15</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+            <torsional>
+              <ode/>
+            </torsional>
+          </friction>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+        </surface>
+        <max_contacts>10</max_contacts>
+      </collision>
+      <visual name="visual_1">
+        <pose>0 0 0.02 0.02 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>5 6 .3</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://driveway/materials/scripts</uri>
+            <uri>model://driveway/materials/textures</uri>
+            <name>Driveway/Concrete</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="visual_2">
+        <pose>0 -4 0 0.04 0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>5 2 .15</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://driveway/materials/scripts</uri>
+            <uri>model://driveway/materials/textures</uri>
+            <name>Driveway/Concrete</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
