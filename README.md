@@ -5,7 +5,7 @@ A currated collection of models for use in the [Gazebo Simulator](http://www.gaz
 ## Worlds
 
 ### single_home.world
-![Image](/docs/single_home_wolrd.jpg)
+![Image](/docs/single_home_world.jpg)
 
 ## Installation
 

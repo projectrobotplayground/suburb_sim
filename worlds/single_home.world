@@ -118,11 +118,18 @@
     </model>
 
     <!-- Road -->
-    <include>
-      <name>residential_road</name>
-      <pose>0 0 0 0 0 0</pose>
-      <uri>model://residential_road</uri>
-    </include>
+    <road name="residential_road">
+      <width>7.4</width>
+      <point>-45.0 1.85 0.01</point>
+      <point>45.0 1.85 0.01</point>
+      <material>
+        <script>
+          <uri>model://residential_road/materials/scripts</uri>
+          <uri>model://residential_road/materials/textures</uri>
+          <name>ResidentialRoad/Diffuse</name>
+        </script>
+      </material>
+    </road>
 
     <!-- House -->
     <include>
@@ -220,6 +227,73 @@
       <name>sidewalk_8_1</name>
       <pose>-8.54 8 0 0 0 0</pose>
       <uri>model://sidewalk</uri>
+    </include>
+
+    <!-- Fence -->
+    <include>
+      <name>fence_1</name>
+      <pose>9.5 21.0 0 0 0 1.57</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_1_1</name>
+      <pose>11.95 23.45 0 0 0 0</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_1_2</name>
+      <pose>11.95 28.45 0 0 0 0</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_2</name>
+      <pose>-10 21.0 0 0 0 1.57</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_2_1</name>
+      <pose>-12.45 23.45 0 0 0 0</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_2_2</name>
+      <pose>-12.45 28.45 0 0 0 0</pose>
+      <uri>model://fence</uri>
+    </include>
+  
+    <include>
+      <name>fence_3_1</name>
+      <pose>9.5 30.9 0 0 0 1.57</pose>
+      <uri>model://fence</uri>
+    </include>
+  
+    <include>
+      <name>fence_3_2</name>
+      <pose>4.5 30.9 0 0 0 1.57</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_3_3</name>
+      <pose>-0.5 30.9 0 0 0 1.57</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_3_4</name>
+      <pose>-5.0 30.9 0 0 0 1.57</pose>
+      <uri>model://fence</uri>
+    </include>
+
+    <include>
+      <name>fence_3_5</name>
+      <pose>-10 30.9 0 0 0 1.57</pose>
+      <uri>model://fence</uri>
     </include>
 
     <!-- Driveway -->
